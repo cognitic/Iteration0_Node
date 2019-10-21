@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+<meta name="viewport" content="initial-scale=1.0" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="./style/iteration0.css?t=2" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/dist/iteration0.js?t=2"></script>
+    <script type="text/javascript">
+    </script>
+    <script type="text/javascript">    
+    $( document ).ready(function() {
+        var pageURLParams = { "projectid":"-1", "explorerid":"-1", "ressourceid":"-1", "viewtypeid":"-1" };
+        Iteration0APP = new I0.Iteration0({localMode : "", servers : [], routingroot : pageURLParams});
+    });
+    </script>
+    <style>
+        .accent-color {
+          color: #ffb300;
+        }
+        .accent-color-refracted {
+          color: #403232;
+        }
+        .accent-bg-color {
+          background:#ffb300;
+        }
+        .accent-bg-color-refracted {
+          background: #403232;
+        }
+        .timeline-item:before{
+          background: #ffb300;
+          border: 3px solid #403232;
+        }
+    </style>
+</head>
+
+<body>
+    
+ <div class="grid-container">
+    
+    <div class="sidemenu">
+      <div class="sidemenu-col">
+        <ul id="app-menu" class="sidemenu-list">
+            <li title="Product Line Management" class="sidemenu-list-item clickable h" linkid="0"><span class="fas fa-home"></span></li>
+            <li title="Competitive Analysis" class="sidemenu-list-item clickable h" linkid="1"><span class="fas fa-thumbs-up"></span></li>
+            <li title="Persona Analysis" class="sidemenu-list-item clickable h" linkid="2"><span class="fas fa-street-view"></span></li>
+            <li title="Requirement Analysis" class="sidemenu-list-item clickable h" linkid="3"><span class="fas fa-project-diagram"></span></li>
+            <li title="Domain Analysis" class="sidemenu-list-item clickable h" linkid="4"><span class="fas fa-brain"></span></li>
+            <li title="Product Roadmap" class="sidemenu-list-item clickable h" linkid="5"><span class="fas fa-map-marker-alt"></span></li>
+            <li title="Feature Comparison" class="sidemenu-list-item clickable h" linkid="6"><span class="fas fa-columns"></span></li>
+        </ul>
+        </div>     
+    </div>
+
+    <footer class="sidemenu-footer" class="user-setting-menu">
+      <div class="app-profile-options-dropdown dropdown">
+        <button title="Manage" class="clickable i0-logo"></button>
+        <ul id="app-manager-menu" class="dropdown-content up">
+            <li linkid="4" >User Management</li>
+            <li linkid="3" >Preferences</li>
+            <li linkid="2" >Search</li>
+            <li linkid="1" >About Iteration0</li>
+            <li linkid="0" >Sign out</li>
+        </ul>
+      </div>
+    </footer>
+
+    <header class="sidenav-header accent-color">
+        <span id="project-title"></span>
+    </header>
+
+    <div class="sidenav"> 
+      <div id="explorer" typeid="0" class="sidenav-col"> 
+      </div>
+    </div>
+
+    <header class="main-header">
+         <div id="main-view-tab" class="main-view radio-button-group h">
+            <input type="radio" name="main-view-group" id="main-view-board" class="out-button" value="0" checked />
+            <label for="main-view-board">&nbsp; <span class="fas fa-th-list"></span> Board</label>
+            <input type="radio" name="main-view-group" id="main-view-history" class="out-button" value="1" />
+            <label for="main-view-history"><span class="fas fa-clock"></span> History</label>
+            <input type="radio" name="main-view-group" id="main-view-export" class="out-button" value="2" />
+            <label for="main-view-export"><span class="fas fa-file-export"></span> Downloads</label>
+          </div>
+    </header>  
+ 
+   <main id="board-view" class="main h">
+
+      <div class="main-top-context">
+        <div id="board-view-toolbar" class="r toolbar h">
+        </div>
+        <div id='main-top-summary' class="h"><span class="breadcrumb"></span> <span class="fas fa-certificate accent-color h"></span><span class="fas fa-flask accent-color h"></span></div>
+      </div>
+
+    <div class="main-top">
+        <div id="screen-header" class="main-top-col">
+        </div>            
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="main-cards-contexts">      
+        <div id="board-cards-toolbar" class="r toolbar h">
+        </div>
+    </div>
+
+    <div class="main-cards">
+      <div id="screen-body" class="main-cards-col">
+      </div>
+    </div>
+
+  </main>
+
+  <main id="table-view" class="main h">
+      <div class="table-viewer">
+        <div class="viewer-main">          
+            <table class="table-centered table-striped log-list">
+              <thead><tr><th>Ressource</th><th>Date</th><th>Time</th><th>User</th><th>Event</th></tr></thead>
+              <tbody></tbody>
+            </table> 
+        </div>            
+  </main>
+  
+  <main  id="megamenu-view"  class="main h">
+      <div class='download-viewer'>
+        <div class="download-card-col no-gap"></div>
+      </div>
+  </main>
+  
+  <main id="matrix-view" class="main h">
+  </main>
+
+</div>
+
+ </div>
+
+ <div id="frozen-screen-layer"></div>
+ <div id="pdf-generator-layer"><div id="pdf-content"></div></div>
+ <div id="custom-layer"></div>
+</body>

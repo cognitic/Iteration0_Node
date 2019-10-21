@@ -1,0 +1,26 @@
+{
+    "localMode":"yes",
+    "servers": [
+        {
+            "name":"XXX (Admin)",
+            "url":"iteration0.XXX.com",
+            "login":"toto",
+            "password":"passpass",
+            "default":"yes"
+        },
+        {
+            "name":"XXX Server",
+            "url":"iteration0.XXX.com",
+            "login":"demo",
+            "password":"demo",
+            "default":"no"
+        }
+    ],
+    "routingroot": {
+    "projectid":"-1",
+    "explorerid":"-1",
+    "ressourceid":"-1",
+    "viewtypeid":"-1"
+    }
+}
+  

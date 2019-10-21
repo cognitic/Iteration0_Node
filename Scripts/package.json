@@ -1,0 +1,23 @@
+{
+  "name": "iteration0",
+  "version": "0.0.1",
+  "description": "iteration0 SPA",
+  "main": "iteration0.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "product",
+    "product management",
+    "product line",
+    "domain analysis",
+    "requirement analysis",
+    "configurator"
+  ],
+  "author": "Labas Jean-Charles",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/cognitic/Iteration0/blob/master/README.md",
+  "scripts": {
+    "tsc": "tsc"
+  }
+}
